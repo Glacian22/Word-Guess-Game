@@ -1,0 +1,25 @@
+PSEUDOCODE TO MAKE HANGMAN
+
+
+choose secret word
+
+set up text on page
+
+all starting values set
+
+capture key presses
+
+store key press in var
+
+check every letter of secret word
+
+if any are a match, replace underscore with letter
+
+check if underscores remaining
+
+if no underscores remaining end game with win, press any key to restart
+
+if not a match decrease guesses left and write in letters guessed
+
+if guesses left is 0, end game with loss, press any key to restart
+

@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -18,12 +18,13 @@
     <h1>It's Hangman time!</h1>
 
     <p>Press any key to get started! Try not to die~</p>
+    <span id="game-over"> </span>
     <span id="win-text">Wins: 0</span>
     <p>Current word: </p>
     <span id="current-word"></span>
     <span>Number of guesses remaining: </span> <span id="guesses-left">10</span>
     <p>Letters already guessed:</p>
-    <div id="letters-guessed"></div>
+    <div id="letters-guessed">   </div>
 
 
 
@@ -47,6 +48,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
