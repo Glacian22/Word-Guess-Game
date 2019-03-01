@@ -2,10 +2,11 @@ var userGuess;
 var guessesLeft = 10;
 var wins = 0;
 var needReset = false;
+var wordList = ["building", "muddled", "beam", "irate", "juicy", "base", "lumpy", "potato", "spectacular", "dinosaur", "pirates", "waffles"];
 var lettersGuessed = document.getElementById("letters-guessed");
 
 var wordOnPage = {
-    secretWord: "waffles",
+    secretWord: "",
     letters: []
 }
 
@@ -24,6 +25,7 @@ function updateWord() {
 //called when page is loaded or game is restarted
 function gameStart() {
     //choose secret word, hardcoded right now
+    wordOnPage.secretWord = wordList[Math.floor(Math.random() * wordList.length)];
 
     //erases existing word in case of new game
     document.getElementById("current-word").textContent = "";
