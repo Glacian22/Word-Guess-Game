@@ -24,15 +24,18 @@ function updateWord() {
 
 //called when page is loaded or game is restarted
 function gameStart() {
-    //choose secret word, hardcoded right now
+    //choose secret word
     wordOnPage.secretWord = wordList[Math.floor(Math.random() * wordList.length)];
+
+    //zero out letters array
+    letters = [];
 
     //erases existing word in case of new game
     document.getElementById("current-word").textContent = "";
 
     //draw in underscores equal to secret word
     for (var i = 0; i < wordOnPage.secretWord.length; i++) {
-        wordOnPage.letters[i] = "_";
+        wordOnPage.letters[i] = " _ ";
 
         document.getElementById("current-word").textContent += wordOnPage.letters[i];
     }
@@ -77,7 +80,8 @@ document.onkeyup = function (event) {
             updateWord();
 
             //check for victory condition, are there any _ remaining?
-            if (wordOnPage.letters.indexOf("_") === -1) {
+            console.log("index of _ : " + wordOnPage.letters.indexOf(" _ "));
+            if (wordOnPage.letters.indexOf(" _ ") === -1) {
                 document.getElementById("game-over").textContent = "YOU HAVE DEFEATED THE ALMIGHTY COMPUTER, CONGRATULATIONS MORTAL CREATURE. PRESS ANY KEY TO PLAY AGAIN";
 
                 wins++;
