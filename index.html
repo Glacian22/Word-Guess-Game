@@ -8,28 +8,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
     <!-- Setting up all of the onscreen text -->
-    <h1>It's Hangman time!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
+                <h1>It's Hangman time!</h1>
+                <p>Press any key to get started! Try not to die~</p>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 border rounded">
+                <span id="win-text">Wins: 0</span>
+                <p>Current word: </p>
+                <span id="current-word"></span>
+                <br></br>
+                <span>Number of guesses remaining: </span> <span id="guesses-left">10</span>
+                <p>Letters already guessed:</p>
+                <div id="letters-guessed"> </div>
+            </div>
+            <div class="col-md-5 mx-md-5">
+                <div id="game-over"> </div>
+            </div>
+        </div>
 
-    <p>Press any key to get started! Try not to die~</p>
-    <span id="game-over"> </span>
-    <br>
-    <span id="win-text">Wins: 0</span>
-    <p>Current word: </p>
-    <span id="current-word"></span>
-    <br></br>
-    <span>Number of guesses remaining: </span> <span id="guesses-left">10</span>
-    <p>Letters already guessed:</p>
-    <div id="letters-guessed">   </div>
 
-
-
+    </div>
 
 
 
