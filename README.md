@@ -4,10 +4,10 @@
 
 This is my first project combining the use of:
 
-*HTML
-*CSS
-*Bootstrap
-*Javascript
+* HTML
+* CSS
+* Bootstrap
+* Javascript
 
 ---
 The HTML skeleton is pretty minimal, with most of the action taking place in the JS file. The vast majority of the styling was done with Bootstrap 4, with only a little bit of custom CSS for tweaking. This let me create a site which works extremely well for mobile devices, while is perfect for a little game like this.
